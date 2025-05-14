@@ -1,146 +1,363 @@
 <!DOCTYPE html>
-<html lang="en" class="enexui_custom_scrollbar">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EnexUI - Developer Friendly UI Framework</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ✅ Title -->
+  <title>EnexUI – Lightweight & Modern UI Framework Documentation</title>
+
+  <!-- ✅ Meta Description -->
+  <meta name="description" content="EnexUI is a lightweight, clean and responsive UI framework. Explore full documentation, components, installation guide and usage examples." />
+
+  <!-- ✅ Keywords -->
+  <meta name="keywords" content="EnexUI, UI framework, Enexcode, documentation, CSS framework, responsive design, bootstrap alternative, front-end design, web UI" />
+
+  <!-- ✅ Author -->
+  <meta name="author" content="Enexcode" />
+
+  <!-- ✅ Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ Open Graph (Facebook etc.) -->
+  <meta property="og:title" content="EnexUI – UI Framework Documentation" />
+  <meta property="og:description" content="Explore the official documentation of EnexUI, a clean and modern UI framework for developers and designers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://enexcode.com/enexui-docs" />
+  <meta property="og:image" content="https://enexcode.com/assets/enexui-cover.png" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EnexUI – Documentation" />
+  <meta name="twitter:description" content="Complete documentation of EnexUI, including installation, components, usage examples, and more." />
+  <meta name="twitter:image" content="https://enexcode.com/assets/enexui-cover.png" />
+
+  <!-- ✅ Favicon (optional) -->
+  <link rel="icon" type="image/png" href="https://enexcode.com/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    :root {
-      --primary: #f39200;
-      --bg: #000000;
-      --text: #ffffff;
-    }
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #000;
     }
-    .enexui_custom_scrollbar {
-      scrollbar-width: thin;
-      scrollbar-color: var(--primary) #1f1f1f;
+    .navbar-dark .navbar-nav .nav-link {
+      color: #fff;
+      transition: color 0.3s;
     }
-    .enexui_custom_scrollbar::-webkit-scrollbar {
-      width: 8px;
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #dddddd;
     }
-    .enexui_custom_scrollbar::-webkit-scrollbar-track {
-      background: #1f1f1f;
-    }
-    .enexui_custom_scrollbar::-webkit-scrollbar-thumb {
-      background-color: var(--primary);
-      border-radius: 10px;
-    }
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      padding: 4rem 2rem;
-      background-color: #000;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3.5rem;
-      font-weight: bold;
-      color: var(--primary);
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    section {
-      padding: 4rem 0;
-    }
-    .section-title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: var(--primary);
-      text-align: center;
-    }
-    .subtext {
-      color: #ccc;
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    footer {
-      padding: 2rem 1rem;
-      text-align: center;
-      background-color: #111;
-      color: #777;
+    .btn-outline-light:hover {
+      color: #000;
+      background-color: #fff;
+      border-color: #fff;
     }
   </style>
 </head>
-<body class="enexui_custom_scrollbar">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-sm">
+<body>
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
     <div class="container">
-      <a class="navbar-brand fw-bold text-white" href="#">EnexUI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <a class="navbar-brand fw-bold" href="#">EnexUI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
           <li class="nav-item">
-            <a class="nav-link text-white" href="#why">Why EnexUI</a>
+            <a class="nav-link active" href="#home_section">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#get-started">Get Started</a>
+            <a class="nav-link" href="#feature_section">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#testimonial">Testimonial</a>
+            <a class="nav-link" href="#why_section">Why EnexUI</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="https://ui.enexcode.com" target="_blank">Live Preview</a>
+            <a class="nav-link" href="#contribute-contact">Contact</a>
           </li>
         </ul>
+        <a href="https://ui.enexcode.com" class="btn btn-outline-light">Get Started</a>
       </div>
     </div>
   </nav>
-
-  <section class="hero">
-    <div>
-      <h1>EnexUI Framework</h1>
-      <p>A minimal, developer-first UI kit with zero bloat — crafted for speed, simplicity, and beautiful dark-mode interfaces.</p>
-    </div>
-  </section>
-
-  <section id="why">
-    <div class="container">
-      <h2 class="section-title mb-4">Why EnexUI?</h2>
-      <p class="subtext mb-4">EnexUI is designed for developers who want clean, modern, and fast UI components that just work — without the noise. Whether you're building a dashboard, landing page, or admin panel, EnexUI makes your process smoother and faster.</p>
-      <p class="subtext">⚡ Built on Bootstrap 5 — optimized for performance<br>
-      🎯 Focused on dark mode design<br>
-      🧩 Easy to integrate, modular structure<br>
-      🛠️ Ideal for developers, freelancers, and teams</p>
-    </div>
-  </section>
-
-  <section id="get-started">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Ready to Build Smart?</h2>
-      <a href="https://ui.enexcode.com" target="_blank" class="btn btn-light btn-lg">Get Started Now</a>
-    </div>
-  </section>
-
-  <section id="testimonial">
-    <div class="container">
-      <h2 class="section-title mb-4">What Developers Say</h2>
-      <div class="text-center">
-        <blockquote class="blockquote">
-          <p class="mb-3">“EnexUI saved me hours of UI setup. It's now my go-to for dark-themed dashboards.”</p>
-          <footer class="blockquote-footer text-white-50">Alex Rahman, Freelance Developer</footer>
-        </blockquote>
+  <!-- Navbar End -->
+  <!-- Hero Start -->
+   <!-- Hero Section Start -->
+<section id="home_section" class="py-5 bg-white text-black">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h1 class="display-4 fw-bold">Build Faster with <span class="text-decoration-underline">EnexUI</span></h1>
+        <p class="lead mt-3 mb-4">A minimal front-end framework built for speed, simplicity, and scalability. Focus on what matters — EnexUI handles the rest.</p>
+        <a href="https://ui.enexcode.com" class="btn btn-dark btn-lg me-3">Get Started</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <!-- Optional image/illustration -->
+        <img src="https://via.placeholder.com/500x350" alt="EnexUI Illustration" class="img-fluid rounded shadow">
       </div>
     </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Enexcode. Built with ❤️ using EnexUI. All rights reserved.</p>
+  </div>
+</section>
+<!-- Hero Section End -->
+<!-- Features Section Start -->
+ <section id="feature_section" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Powerful Features of EnexUI</h2>
+      <p class="text-muted">Explore the core features that make EnexUI a modern, lightweight, and flexible UI framework for all kinds of web projects.</p>
     </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="row g-4">
+      <!-- Feature 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white h-100 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-lightning-charge-fill fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-semibold">Lightweight & Fast</h5>
+          <p class="text-muted">Built for speed and performance. EnexUI is minimal and loads incredibly fast, making your site lightning quick.</p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white h-100 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-layers-fill fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-semibold">Modular Components</h5>
+          <p class="text-muted">Use only what you need. EnexUI offers modular CSS and components that keep your project clean and organized.</p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white h-100 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-phone-fill fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-semibold">Fully Responsive</h5>
+          <p class="text-muted">Whether it’s mobile, tablet or desktop — EnexUI adapts smoothly to every screen size with fluid grid and utilities.</p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white h-100 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-code-slash fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-semibold">Clean & Readable Code</h5>
+          <p class="text-muted">EnexUI’s codebase is semantic, well-structured and developer-friendly — easy to customize and scale.</p>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white h-100 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-droplet-half fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-semibold">Dark Mode Support</h5>
+          <p class="text-muted">Integrated dark mode with customizable themes. Ideal for modern interfaces and user preferences.</p>
+        </div>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 border rounded bg-white h-100 shadow-sm">
+          <div class="mb-3">
+            <i class="bi bi-box-seam fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-semibold">Ready to Integrate</h5>
+          <p class="text-muted">Easily plug into any front-end or back-end stack: Laravel, React, Vue, or plain HTML/CSS. Works seamlessly anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section End -->
+<!-- Why EnexUI Section Start -->
+ <section class="py-5 bg-white" id="why_section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Why Choose EnexUI?</h2>
+      <p class="text-muted">EnexUI is crafted to empower developers and designers with a clean, fast, and scalable UI solution.</p>
+    </div>
+
+    <div class="row align-items-center">
+      <!-- Left Column (Text) -->
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li class="d-flex mb-4">
+            <i class="bi bi-check-circle-fill text-success fs-3 me-3"></i>
+            <div>
+              <h5 class="fw-semibold">Developer Friendly</h5>
+              <p class="text-muted mb-0">Built with simplicity and flexibility in mind. No bloat, only useful utilities.</p>
+            </div>
+          </li>
+          <li class="d-flex mb-4">
+            <i class="bi bi-check-circle-fill text-success fs-3 me-3"></i>
+            <div>
+              <h5 class="fw-semibold">Minimal & Fast</h5>
+              <p class="text-muted mb-0">Less code, faster performance. Load pages in milliseconds with lean CSS.</p>
+            </div>
+          </li>
+          <li class="d-flex mb-4">
+            <i class="bi bi-check-circle-fill text-success fs-3 me-3"></i>
+            <div>
+              <h5 class="fw-semibold">Dark Mode Ready</h5>
+              <p class="text-muted mb-0">Built-in support for dark theme — no extra setup needed.</p>
+            </div>
+          </li>
+          <li class="d-flex mb-4">
+            <i class="bi bi-check-circle-fill text-success fs-3 me-3"></i>
+            <div>
+              <h5 class="fw-semibold">Easy to Customize</h5>
+              <p class="text-muted mb-0">Use your own colors, fonts and components easily with utility-first structure.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Column (Image or Illustration) -->
+      <div class="col-md-6 text-center">
+        <img src="https://enexcode.com/assets/why-enexui.svg" alt="Why EnexUI Illustration" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why EnexUI Section End -->
+ <section class="py-5 bg-light" id="installation">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">How to Use EnexUI</h2>
+      <p class="text-muted">Start using EnexUI in just a few steps. No complex setup — clean and flexible utility-first styling.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Step 1 -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded shadow-sm h-100">
+          <h5 class="fw-semibold mb-3">1. Add Class to HTML</h5>
+          <p class="text-muted">Choose a component and apply the required class names to your HTML elements.</p>
+          <pre class="bg-dark text-white p-3 rounded small mb-0">&lt;button class="enx-btn-primary"&gt;Click me&lt;/button&gt;</pre>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded shadow-sm h-100">
+          <h5 class="fw-semibold mb-3">2. Include CSS</h5>
+          <p class="text-muted">Download the CSS file or copy from CDN and link it in your HTML.</p>
+          <pre class="bg-dark text-white p-3 rounded small mb-0">&lt;link rel="stylesheet" href="https://cdn.enexcode.com/enexui.css"&gt;</pre>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white border rounded shadow-sm h-100">
+          <h5 class="fw-semibold mb-3">3. Add JS (If Needed)</h5>
+          <p class="text-muted">Some interactive components require JS. Copy script from docs or use our minified file.</p>
+          <pre class="bg-dark text-white p-3 rounded small mb-0">&lt;script src="https://cdn.enexcode.com/enexui.min.js"&gt;&lt;/script&gt;</pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <p class="text-muted">Every component has its own <strong>usage guide</strong> in the documentation.</p>
+      <a href="https://ui.enexcode.com" class="btn btn-dark px-4">View All Components</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Hero End -->
+   <!-- Contribution Note -->
+<section class="py-5 bg-white" id="contribute-contact">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      
+      <!-- Contribute Section -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2 class="fw-bold">Build with Us</h2>
+        <p class="text-muted mb-4">
+          EnexUI is open-source. Anyone can add new components or improve existing ones by contributing on GitHub.
+        </p>
+        <a href="https://github.com/enexcode/enexui" target="_blank" class="btn btn-dark px-4">
+          <i class="bi bi-github me-2"></i>Contribute on GitHub
+        </a>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2 class="fw-bold">Get in Touch</h2>
+        <p class="text-muted mb-4">Reach out to us through any of the following platforms.</p>
+
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start mb-4">
+          <a href="mailto:info@enexcode.com" class="btn btn-dark me-2 mb-2" target="_blank">
+            <i class="bi bi-envelope-fill"></i> Email
+          </a>
+          <a href="tel:+8801766596669" class="btn btn-dark me-2 mb-2" target="_blank">
+            <i class="bi bi-phone-fill"></i> WhatsApp
+          </a>
+          <a href="https://facebook.com/enexcode" class="btn btn-dark me-2 mb-2" target="_blank">
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+          <a href="https://linkedin.com/in/enexcode" class="btn btn-dark me-2 mb-2" target="_blank">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://youtube.com/enexcode" class="btn btn-dark me-2 mb-2" target="_blank">
+            <i class="bi bi-youtube"></i> YouTube
+          </a>
+        </div>
+
+        <p class="text-muted">Feel free to connect with us on any of the platforms above.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center">
+
+    <!-- Logo and Version -->
+    <h4 class="fw-bold">EnexUI <span class="text-white fs-6">v1.0.0</span></h4>
+    <p class="text-white mb-3">A modern UI framework built by Enexcode</p>
+
+    <!-- Buttons -->
+    <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
+      <a href="https://github.com/enexcode/enexui" target="_blank" class="btn btn-outline-light btn-sm px-3">
+        <i class="bi bi-github me-1"></i> Star on GitHub
+      </a>
+      <a href="https://www.buymeacoffee.com/enexcode" target="_blank" class="btn btn-outline-warning btn-sm px-3">
+        ☕ Donate
+      </a>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-light" style="opacity: 0.1;">
+
+    <!-- Copyright -->
+    <p class="mb-1 text-white small">
+      &copy; 2025 <strong>EnexUI</strong>. A project by <strong>Enexcode</strong>.
+    </p>
+    <p class="mb-0 text-white small">
+      Crafted with ❤️ by <strong>Jholok</strong>, Developer of EnexUI.
+    </p>
+
+  </div>
+</footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

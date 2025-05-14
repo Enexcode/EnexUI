@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EnexUI Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .navbar-dark .nav-link, .navbar-dark .navbar-brand {
+      color: #fff;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background-color: #000;
+      color: #0f0;
+      padding: 1rem;
+      border-radius: .5rem;
+      overflow-x: auto;
+    }
+    .sidebar {
+      position: sticky;
+      top: 80px;
+    }
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem 0;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">EnexUI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#usage">Usage</a></li>
+        <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
+        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+      </ul>
+      <a href="#get-started" class="btn btn-outline-light">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="py-5 text-center bg-white text-black">
+  <div class="container">
+    <h1 class="display-4 fw-bold">EnexUI Documentation</h1>
+    <p class="lead mt-3 mb-4">Everything you need to build faster and better with EnexUI — clean, lightweight, and efficient.</p>
+    <a href="#installation" class="btn btn-dark btn-lg">Get Started</a>
+  </div>
+</section>
+
+<!-- Main Documentation Content -->
+<div class="container my-5">
+  <div class="row">
+    <!-- Sidebar -->
+    <aside class="col-md-3 d-none d-md-block sidebar">
+      <h5 class="mb-3">Contents</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#usage">Usage</a></li>
+        <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
+        <li class="nav-item"><a class="nav-link" href="#code-example">Code Example</a></li>
+        <li class="nav-item"><a class="nav-link" href="#version">Version</a></li>
+        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+      </ul>
+    </aside>
+
+    <!-- Documentation Content -->
+    <main class="col-md-9">
+      <!-- Installation -->
+      <section id="installation" class="mb-5">
+        <h2>Installation</h2>
+        <p>To install EnexUI, simply include the CSS file in your HTML:</p>
+        <pre><code>&lt;link rel="stylesheet" href="enexui.min.css"&gt;</code></pre>
+        <p>Or via CDN:</p>
+        <pre><code>&lt;link href="https://cdn.example.com/enexui.min.css" rel="stylesheet"&gt;</code></pre>
+      </section>
+
+      <!-- Usage -->
+      <section id="usage" class="mb-5">
+        <h2>Usage</h2>
+        <p>Start using EnexUI by adding classes to your HTML elements. Example:</p>
+        <pre><code>&lt;button class="btn btn-dark"&gt;Click me&lt;/button&gt;</code></pre>
+      </section>
+
+      <!-- Components -->
+      <section id="components" class="mb-5">
+        <h2>Components</h2>
+        <p>EnexUI comes with the following built-in components:</p>
+        <ul>
+          <li>Buttons</li>
+          <li>Cards</li>
+          <li>Grids</li>
+          <li>Navbar</li>
+          <li>Alerts</li>
+        </ul>
+      </section>
+
+      <!-- Code Example -->
+      <section id="code-example" class="mb-5">
+        <h2>Sample Code</h2>
+        <p>A simple EnexUI card component:</p>
+        <pre><code>
+&lt;div class="card"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h5 class="card-title"&gt;EnexUI Card&lt;/h5&gt;
+    &lt;p class="card-text"&gt;Lightweight and responsive UI block.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </section>
+
+      <!-- Version -->
+      <section id="version" class="mb-5">
+        <h2>Version</h2>
+        <p>Current Version: <strong>v1.0.0</strong></p>
+        <p>Release Date: <strong>May 2025</strong></p>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container text-center">
+    <p class="mb-1">© 2025 EnexUI. All rights reserved.</p>
+    <p>Built with ❤️ by <a href="https://enexcode.com" target="_blank">Enexcode</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

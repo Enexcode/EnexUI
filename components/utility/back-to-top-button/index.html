@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EnexUI - A customizable back to top utility.">
+  <meta name="keywords" content="EnexUI, back to top, smooth scroll, utility, CSS framework, Enexcode">
+  <meta name="author" content="Noushed Ahmed Jholok">
+  <meta property="og:title" content="EnexUI - Back to Top Utility">
+  <meta property="og:description" content="A sleek and customizable back to top utility for modern web projects.">
+  <meta property="og:image" content="https://enexcode.com/assets/enexui-thumbnail.jpg">
+  <meta property="og:url" content="https://enexcode.com/enexui">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>EnexUI - Back to Top Utility</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    .navbar-brand{
+      font-size: 34px !important;
+    }
+
+    .code-box {
+      position: relative;
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 1rem;
+      color: #fff;
+      overflow: auto;
+    }
+
+    footer {
+      padding: 2rem 1rem;
+      text-align: center;
+      background-color: #1a1a1a;
+      color: #999;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f39200;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-to-top:hover {
+      background-color: #d57d00;
+    }
+
+    .back-to-top.show {
+      display: block;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">EnexUI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#demo">Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#usage">Usage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download">Download</a>
+          </li>
+          <a href="https://enexcode.com" class="btn btn-outline-light ms-2">Get Started</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <header class="mb-5 text-center">
+      <h1 class="display-5 fw-bold">Back to Top Utility</h1>
+      <p class="lead">EnexUI Utility Category &mdash; Version 1.0.0</p>
+    </header>
+
+    <section id="demo" class="mb-5">
+      <h2 class="mb-3">Live Demo</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut sem ac metus aliquet ultrices. Integer sed nisi et ligula lacinia vestibulum. Phasellus et ipsum in orci tincidunt bibendum. Donec lacinia nisl quis porta sodales.</p>
+      <p>Aliquam erat volutpat. Curabitur nec libero libero. Quisque tempor sapien ut tellus dapibus, at dapibus nunc convallis. Etiam vulputate porta lectus, vel porttitor tellus sollicitudin vitae.</p>
+    </section>
+
+    <section id="usage" class="mb-5">
+      <h2 class="mb-3">Usage Instructions</h2>
+      <p>To use the "Back to Top" button, simply include the following HTML and CSS in your project:</p>
+      <div class="code-box mb-3">
+        <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+        <code>&lt;button class="back-to-top" onclick="scrollToTop()"&gt;↑&lt;/button&gt;</code>
+      </div>
+
+      <div class="code-box mb-3">
+        <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+        <pre><code>.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f39200;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #d57d00;
+}
+
+.back-to-top.show {
+  display: block;
+}
+</code></pre>
+      </div>
+    </section>
+
+    <section id="download">
+      <h2 class="mb-3">Download</h2>
+      <a href="#" class="btn btn-warning">Download CSS File</a>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 EnexUI. All rights reserved.</p>
+      <p>Built with ❤️ by <a href="https://enexcode.com" target="_blank">Enexcode</a></p>
+      <p>
+        If you love EnexUI, you can <a href="https://www.buymeacoffee.com/jholok" target="_blank">donate</a> or send a gift 💝.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function copyToClipboard(button) {
+      const code = button.parentElement.querySelector('code, pre code');
+      if (code) {
+        const text = code.innerText;
+        navigator.clipboard.writeText(text).then(() => {
+          button.innerText = "Copied!";
+          setTimeout(() => (button.innerText = "Copy"), 1500);
+        });
+      }
+    }
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        document.querySelector('.back-to-top').classList.add('show');
+      } else {
+        document.querySelector('.back-to-top').classList.remove('show');
+      }
+    };
+  </script>
+</body>
+</html>
