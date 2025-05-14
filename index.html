@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="enexui_custom_scrollbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnexUI - Developer Friendly UI Framework</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f39200;
+      --bg: #000000;
+      --text: #ffffff;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .enexui_custom_scrollbar {
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary) #1f1f1f;
+    }
+    .enexui_custom_scrollbar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .enexui_custom_scrollbar::-webkit-scrollbar-track {
+      background: #1f1f1f;
+    }
+    .enexui_custom_scrollbar::-webkit-scrollbar-thumb {
+      background-color: var(--primary);
+      border-radius: 10px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 4rem 2rem;
+      background-color: #000;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 4rem 0;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      text-align: center;
+    }
+    .subtext {
+      color: #ccc;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    footer {
+      padding: 2rem 1rem;
+      text-align: center;
+      background-color: #111;
+      color: #777;
+    }
+  </style>
+</head>
+<body class="enexui_custom_scrollbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#">EnexUI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#why">Why EnexUI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#get-started">Get Started</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="https://ui.enexcode.com" target="_blank">Live Preview</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>EnexUI Framework</h1>
+      <p>A minimal, developer-first UI kit with zero bloat — crafted for speed, simplicity, and beautiful dark-mode interfaces.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="container">
+      <h2 class="section-title mb-4">Why EnexUI?</h2>
+      <p class="subtext mb-4">EnexUI is designed for developers who want clean, modern, and fast UI components that just work — without the noise. Whether you're building a dashboard, landing page, or admin panel, EnexUI makes your process smoother and faster.</p>
+      <p class="subtext">⚡ Built on Bootstrap 5 — optimized for performance<br>
+      🎯 Focused on dark mode design<br>
+      🧩 Easy to integrate, modular structure<br>
+      🛠️ Ideal for developers, freelancers, and teams</p>
+    </div>
+  </section>
+
+  <section id="get-started">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Ready to Build Smart?</h2>
+      <a href="https://ui.enexcode.com" target="_blank" class="btn btn-light btn-lg">Get Started Now</a>
+    </div>
+  </section>
+
+  <section id="testimonial">
+    <div class="container">
+      <h2 class="section-title mb-4">What Developers Say</h2>
+      <div class="text-center">
+        <blockquote class="blockquote">
+          <p class="mb-3">“EnexUI saved me hours of UI setup. It's now my go-to for dark-themed dashboards.”</p>
+          <footer class="blockquote-footer text-white-50">Alex Rahman, Freelance Developer</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Enexcode. Built with ❤️ using EnexUI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
