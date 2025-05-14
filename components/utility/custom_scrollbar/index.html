@@ -228,30 +228,33 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    function copyToClipboard(button) {
-      const code = button.parentElement.querySelector('code, pre code');
-      if (code) {
-        const text = code.innerText;
-        navigator.clipboard.writeText(text).then(() => {
-          button.innerText = "Copied!";
-          setTimeout(() => (button.innerText = "Copy"), 1500);
+  function copyToClipboard(button) {
+    const code = button.parentElement.querySelector('code, pre code');
+    if (code) {
+      const text = code.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => (button.innerText = "Copy"), 1500);
+      });
+    }
+  }
+
+  // শুধু anchor link (#demo, #usage, #download) এর জন্য smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        e.preventDefault(); // শুধু anchor link এর জন্য preventDefault
+        window.scrollTo({
+          top: targetElement.offsetTop - 100,
+          behavior: 'smooth'
         });
       }
-    }
-
-    document.querySelectorAll('a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const targetId = this.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    window.scrollTo({
-      top: targetElement.offsetTop - 100, // Scroll to the section but offset 100px
-      behavior: 'smooth'
     });
   });
-});
-  </script>
+</script>
+
 </body>
 </html>
