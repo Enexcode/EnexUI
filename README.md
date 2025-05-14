@@ -1,7 +1,7 @@
 # EnexUI <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="version" />
 
 A lightweight, modern, and customizable UI component framework built by **[Enexcode](https://enexcode.com)** to accelerate your web development.  
-Crafted with ❤️ by [Jholok](https://linkedin.com/in/enexcode) 🚀
+Crafted with ❤️ by [Jholok](https://facebook.com/jholokofficial) 🚀
 
 ![EnexUI Screenshot](https://your-screenshot-url.com/enexui-preview.png) <!-- Add real screenshot link -->
 
