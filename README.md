@@ -9,7 +9,7 @@ Crafted with ❤️ by [Jholok](https://linkedin.com/in/enexcode) 🚀
 
 ## 🌐 Live Preview
 
-👉 [Visit the Website](https://enexcode.com/enexui)
+👉 [Visit the Website](https://ui.enexcode.com/)
 
 ---
 
@@ -77,7 +77,7 @@ EnexUI is open-source and we welcome contributors!
 
 Feel free to reach out or connect with us:
 
-- ✉️ Email: [info@enexcode.com](mailto:info@enexcode.com)
+- ✉️ Email: [enexui@enexcode.com](mailto:enexui@enexcode.com)
 - 📞 Phone: [+8801766596669](tel:+8801766596669)
 - 🌐 Facebook: [facebook.com/enexcode](https://facebook.com/enexcode)
 - 💼 LinkedIn: [linkedin.com/in/enexcode](https://linkedin.com/in/enexcode)
